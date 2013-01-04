@@ -1,0 +1,2854 @@
+proc format lib=test;
+value VARSTRAT
+                 1 = "{1}"
+                 2 = "{2}"
+                 3 = "{3}"
+                 4 = "{4}"
+                 5 = "{5}"
+                 6 = "{6}"
+                 7 = "{7}"
+                 8 = "{8}"
+                 9 = "{9}"
+                10 = "{10}"
+                11 = "{11}"
+                12 = "{12}"
+                13 = "{13}"
+                14 = "{14}"
+                15 = "{15}"
+                16 = "{16}"
+                17 = "{17}"
+                18 = "{18}"
+                19 = "{19}"
+                20 = "{20}"
+                21 = "{21}"
+                22 = "{22}"
+                23 = "{23}"
+                24 = "{24}"
+                25 = "{25}"
+                26 = "{26}"
+                27 = "{27}"
+                28 = "{28}"
+                29 = "{29}"
+                30 = "{30}"
+                31 = "{31}"
+                32 = "{32}"
+                33 = "{33}"
+                34 = "{34}"
+                35 = "{35}"
+                36 = "{36}"
+                37 = "{37}"
+                38 = "{38}"
+                39 = "{39}"
+                40 = "{40}"
+                41 = "{41}"
+                42 = "{42}"
+                43 = "{43}"
+                44 = "{44}"
+                45 = "{45}"
+                46 = "{46}"
+                47 = "{47}"
+                48 = "{48}"
+                49 = "{49}"
+                50 = "{50}"
+                51 = "{51}"
+                52 = "{52}"
+                53 = "{53}"
+                54 = "{54}"
+                55 = "{55}"
+                56 = "{56}"
+                57 = "{57}"
+                58 = "{58}"
+                59 = "{59}"
+                60 = "{60}"
+                61 = "{61}"
+   ;
+value VARUNIT 
+                 1 = "{1}"
+                 2 = "{2}"
+                 3 = "{3}"
+   ;
+value DREGION 
+                 1 = "Northeast"
+                 2 = "Midwest"
+                 3 = "South"
+                 4 = "West"
+   ;
+value DAGE    
+                 1 = "16-18"
+                 2 = "19-24"
+                 3 = "25-39"
+                 4 = "40-49"
+                 5 = "50-64"
+                 6 = "65+"
+   ;
+value DAGEC   
+                 1 = "16-24"
+                 2 = "25-39"
+                 3 = "40-49"
+                 4 = "50+"
+   ;
+value DSEX    
+                 0 = "Female"
+                 1 = "Male"
+   ;
+value DRACE   
+                 1 = "White"
+                 2 = "Black"
+                 3 = "Hispanic"
+                 4 = "Other (incl multi-racial)"
+   ;
+value DARRIVE 
+                 1 = "Born in the U.S."
+                 2 = "0-18"
+                 3 = "19+"
+   ;
+value DLIVEUS 
+                 1 = "Born in the U.S."
+                 2 = "1-5"
+                 3 = "6+"
+   ;
+value DEDBFUS 
+                 1 = "Did not attend school/Primary"
+                 2 = "Elementary"
+                 3 = "Secondary+"
+                98 = "{Not applicable}"
+   ;
+value DENGAGE 
+                 1 = "Speak English only"
+                 2 = "1-10"
+                 3 = "11+"
+                 4 = "Does not speak English"
+   ;
+value DCBIRTH 
+                 1 = "U.S."
+                 2 = "Other"
+   ;
+value D1STLAN 
+                 1 = "English only"
+                 2 = "Enlgish and Spanish (with or without other)"
+                 3 = "English and other"
+                 4 = "Spanish only or with other"
+                 5 = "Other only"
+   ;
+value D1STLANC
+                 1 = "English only"
+                 2 = "Enlgish and other (incl Spanish)"
+                 3 = "Other only"
+   ;
+value DHMLANG 
+                 1 = "English only"
+                 2 = "English and Spanish (with or without other)"
+                 3 = "English and other"
+                 4 = "Spanish only or with other"
+                 5 = "Other only"
+   ;
+value DHMLANGC
+                 1 = "English only"
+                 2 = "English and other (incl Spanish)"
+                 3 = "Other only"
+   ;
+value DLANGRW 
+                 1 = "English"
+                 2 = "Spanish"
+                 3 = "Other"
+   ;
+value DLANGRWC
+                 1 = "English"
+                 2 = "Other"
+   ;
+value DESL    
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DWHENESL
+                 1 = "Within last two years"
+                 2 = "2 to 5 years ago"
+                 3 = "More than 5 years ago"
+                 4 = "Currently taking ESL class"
+                98 = "{Not applicable}"
+   ;
+value DCLANGS 
+                 1 = "English"
+                 2 = "Spanish"
+                 3 = "Other"
+   ;
+value DCLANGSC
+                 1 = "English"
+                 2 = "Other"
+   ;
+value DOLSOPT 
+                 1 = "English only"
+                 2 = "English and Spanish (with or without other)"
+                 3 = "English and other"
+                 4 = "Spanish only or with other (not English)"
+                 5 = "Other only"
+                98 = "{Not applicable}"
+   ;
+value DOLANGSB
+                 1 = "Spanish"
+                 2 = "Other"
+                98 = "{Not applicable}"
+   ;
+value DDTYPE  
+                 1 = "Regular from school in US or US govt school outside US"
+                 2 = "Regular from school outside US"
+                 3 = "GED or Cert completion"
+                 4 = "No high school diploma or missing"
+                98 = "{Not applicable}"
+   ;
+value DDTYPEC 
+                 1 = "Regular from school in US or US govt school outside US"
+                 2 = "GED or Cert completion"
+                 3 = "No H.S. dipl/missing/Regular from school outside US"
+                98 = "{Not applicable}"
+   ;
+value DRFSSCHC
+                 1 = "Financial problems"
+                 2 = "Did not do well in school"
+                 3 = "Did not like school or was bored in school"
+                 4 = "Expelled from school or asked to leave"
+                 5 = "Wanted to work or go into the military"
+                 6 = "Personal reasons"
+                 8 = "Other"
+                98 = "{Not applicable}"
+   ;
+value DSGRDHS 
+                 1 = "Current"
+                 2 = "Other"
+                98 = "{Not applicable}"
+   ;
+value DSGRDCO 
+                 1 = "Current"
+                 2 = "Other"
+                98 = "{Not applicable}"
+   ;
+value DSPUDSTD
+                 1 = "Very well"
+                 2 = "Well"
+                 3 = "Not well"
+                 4 = "Not at all"
+                98 = "{Not applicable}"
+   ;
+value DOTUDSTD
+                 1 = "Very well"
+                 2 = "Well"
+                 3 = "Not well"
+                 4 = "Not at all"
+                98 = "{Not applicable}"
+   ;
+value DSPSPEAK
+                 1 = "Very well"
+                 2 = "Well"
+                 3 = "Not well"
+                 4 = "Not at all"
+                98 = "{Not applicable}"
+   ;
+value DOTSPEAK
+                 1 = "Very well"
+                 2 = "Well"
+                 3 = "Not well"
+                 4 = "Not at all"
+                98 = "{Not applicable}"
+   ;
+value DSPREAD 
+                 1 = "Very well"
+                 2 = "Well"
+                 3 = "Not well"
+                 4 = "Not at all"
+                98 = "{Not applicable}"
+   ;
+value DOTREAD 
+                 1 = "Very well"
+                 2 = "Well"
+                 3 = "Not well"
+                 4 = "Not at all"
+                98 = "{Not applicable}"
+   ;
+value DSPWRITE
+                 1 = "Very well"
+                 2 = "Well"
+                 3 = "Not well"
+                 4 = "Not at all"
+                98 = "{Not applicable}"
+   ;
+value DOTWRITE
+                 1 = "Very well"
+                 2 = "Well"
+                 3 = "Not well"
+                 4 = "Not at all"
+                98 = "{Not applicable}"
+   ;
+value DBQ1130A
+                 1 = "Very well"
+                 2 = "Well"
+                 3 = "Not well"
+                 4 = "Not at all"
+   ;
+value DBQ1135A
+                 1 = "Very well"
+                 2 = "Well"
+                 3 = "Not well"
+                 4 = "Not at all"
+   ;
+value DBQ1140A
+                 1 = "Very well"
+                 2 = "Well"
+                 3 = "Not well"
+                 4 = "Not at all"
+   ;
+value DBQ1145A
+                 1 = "Very well"
+                 2 = "Well"
+                 3 = "Not well"
+                 4 = "Not at all"
+   ;
+value DBQ1155A
+                 1 = "No difficulty"
+                 2 = "Some difficulty"
+                 3 = "Moderate difficulty"
+                 4 = "Great deal of difficulty"
+                 5 = "Never tried"
+                98 = "{Not applicable}"
+   ;
+value DBQ1165A
+                 1 = "No difficulty"
+                 2 = "Some difficulty"
+                 3 = "Moderate difficulty"
+                 4 = "Great deal of difficulty"
+                 5 = "Never tried"
+                98 = "{Not applicable}"
+   ;
+value DBQ1170A
+                 1 = "No difficulty"
+                 2 = "Some difficulty"
+                 3 = "Moderate difficulty"
+                 4 = "Great deal of difficulty"
+                 5 = "Never tried"
+                98 = "{Not applicable}"
+   ;
+value DBQ1180A
+                 1 = "No difficulty"
+                 2 = "Some difficulty"
+                 3 = "Moderate difficulty"
+                 4 = "Great deal of difficulty"
+                 5 = "Never tried"
+                98 = "{Not applicable}"
+   ;
+value DBQ1185A
+                 1 = "No difficulty"
+                 2 = "Some difficulty"
+                 3 = "Moderate difficulty"
+                 4 = "Great deal of difficulty"
+                 5 = "Never tried"
+                98 = "{Not applicable}"
+   ;
+value DBQ1190A
+                 1 = "No difficulty"
+                 2 = "Some difficulty"
+                 3 = "Moderate difficulty"
+                 4 = "Great deal of difficulty"
+                 5 = "Never tried"
+                98 = "{Not applicable}"
+   ;
+value DBQ1200A
+                 1 = "No difficulty"
+                 2 = "Some difficulty"
+                 3 = "Moderate difficulty"
+                 4 = "Great deal of difficulty"
+                 5 = "Never tried"
+                98 = "{Not applicable}"
+   ;
+value DEDATTN 
+                 1 = "Still in high school"
+                 2 = "Less than/some high school"
+                 3 = "GED/high school equivalency"
+                 4 = "High school graduate"
+                 5 = "Vocational/trade/business school"
+                 6 = "Some college"
+                 7 = "Associate^s/2-year degree"
+                 8 = "College graduate"
+                 9 = "Graduate studies/degree"
+   ;
+value DEDATTNC
+                 1 = "Still in high school"
+                 2 = "Less than/some high school"
+                 3 = "GED/high school equivalency"
+                 4 = "High school graduate"
+                 5 = "Vocational school/some college/A.A.degree"
+                 6 = "College+"
+   ;
+value DHSAGE  
+                 1 = "<=19"
+                 2 = "20+"
+                98 = "{Not applicable}"
+   ;
+value DBQ1260A
+                 1 = "Since birth"
+                 2 = "< 1 year"
+                 3 = "1-5 years"
+                 4 = "6-10 years"
+                 5 = "11-15 years"
+                 6 = "16-20 years"
+                 7 = "> 20 years"
+   ;
+value DBQ1270A
+                 1 = "Yes"
+                 2 = "No"
+   ;
+value DBQ1275A
+                 1 = "Yes"
+                 2 = "No"
+   ;
+value DBQ1280A
+                 1 = "Within the last 2 years"
+                 2 = "2 to 5 years ago"
+                 3 = "More than 5 years ago"
+                 4 = "Currently in a basic skills class"
+                98 = "{Not applicable}"
+   ;
+value DBQ1290A
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DBQ1295A
+                 1 = "Yes"
+                 2 = "No"
+   ;
+value DBQ1300A
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DBQ1305A
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DBQ1310A
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DBQ1315A
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DBQ1320A
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DBQ1325A
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DBQ1330A
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DBQ1335A
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DBQ1340A
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DBQ1345A
+                 1 = "Yes"
+                 2 = "No"
+   ;
+value DBQ1350A
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DBQ1355A
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DBQ1360A
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DBQ1365A
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DBQ1370A
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DBQ1375A
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DBQ1380A
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DBQ1385A
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DBQ1390A
+                 1 = "A lot"
+                 2 = "Some"
+                 3 = "A little"
+                 4 = "None"
+   ;
+value DBQ1395A
+                 1 = "A lot"
+                 2 = "Some"
+                 3 = "A little"
+                 4 = "None"
+   ;
+value DBQ1400A
+                 1 = "A lot"
+                 2 = "Some"
+                 3 = "A little"
+                 4 = "None"
+   ;
+value DBQ1405A
+                 1 = "A lot"
+                 2 = "Some"
+                 3 = "A little"
+                 4 = "None"
+   ;
+value DBQ1410A
+                 1 = "A lot"
+                 2 = "Some"
+                 3 = "A little"
+                 4 = "None"
+   ;
+value DBQ1415A
+                 1 = "A lot"
+                 2 = "Some"
+                 3 = "A little"
+                 4 = "None"
+   ;
+value DSPINFO 
+                 1 = "All"
+                 2 = "Most"
+                 3 = "Some"
+                 4 = "None"
+                98 = "{Not applicable}"
+   ;
+value DOTINFO 
+                 1 = "All"
+                 2 = "Most"
+                 3 = "Some"
+                 4 = "None"
+                98 = "{Not applicable}"
+   ;
+value DBQ1430A
+                 1 = "Yes"
+                 2 = "No"
+   ;
+value DBQ1435A
+                 1 = "Most days"
+                 2 = "A few days a week"
+                 3 = "About once a week"
+                 4 = "Less than once a week"
+                 5 = "Never"
+                98 = "{Not applicable}"
+   ;
+value DBQ1440A
+                 0 = "None"
+                 1 = "1"
+                 2 = "2"
+                 3 = "3"
+                 4 = "4"
+                 5 = "5"
+                 6 = "6 or more"
+   ;
+value DBQ1445A
+                 1 = "Daily"
+                 2 = "Weekly"
+                 3 = "Monthly"
+                 4 = "Once or twice a year"
+                 5 = "Never"
+   ;
+value DBQ1450A
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DBQ1460A
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DBQ1462A
+                 1 = "Yes"
+                 2 = "No"
+   ;
+value DVOTE   
+                 0 = "Not a citizen"
+                 1 = "Did not vote"
+                 2 = "Voted"
+                 3 = "Do not remember"
+   ;
+value DBQ1475A
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DBQ1490A
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DLFORCE 
+                 1 = "Employed full time"
+                 2 = "Employed part time"
+                 3 = "Employed but not at work"
+                 4 = "Unemployed"
+                 5 = "Out of labor force"
+   ;
+value DWEEKWG 
+                 1 = "Less than $300"
+                 2 = "$300-$499"
+                 3 = "$500-$649"
+                 4 = "$650-$1149"
+                 5 = "$1150-$1949"
+                 6 = ">=$1950"
+                98 = "{Not applicable}"
+   ;
+value DBQ1530A
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DBQ1530B
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DBQ1530C
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DBQ1530D
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DBQ1530E
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DBQ1530F
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DMCBIRTH
+                 1 = "U.S."
+                 2 = "Other"
+   ;
+value DFCBIRTH
+                 1 = "U.S."
+                 2 = "Other"
+   ;
+value DWORKHIS
+                 1 = "Held a paying job within the last three years"
+                 2 = "Held a paying job, but not within the last three years"
+                 3 = "Never been employed for pay full-time or part-time"
+   ;
+value DEMPTYP 
+                 1 = "Government"
+                 2 = "Private employer"
+                 3 = "Self-employed"
+                 4 = "Family business"
+                98 = "{Not applicable}"
+   ;
+value DEMPTYPC
+                 1 = "Private employer"
+                 2 = "Self-employed"
+                 3 = "Other"
+                98 = "{Not applicable}"
+   ;
+value DUSECOMP
+                 1 = "Yes"
+                 2 = "No"
+   ;
+value DRDENGPR
+                 1 = "Every day"
+                 2 = "A few times a week"
+                 3 = "Once a week"
+                 4 = "Less than once a week"
+                 5 = "Never"
+   ;
+value DRDENGBK
+                 1 = "Every day"
+                 2 = "A few times a week"
+                 3 = "Once a week"
+                 4 = "Less than once a week"
+                 5 = "Never"
+   ;
+value DRDENGLN
+                 1 = "Every day"
+                 2 = "A few times a week"
+                 3 = "Once a week"
+                 4 = "Less than once a week"
+                 5 = "Never"
+   ;
+value DSPPAPER
+                 1 = "Everyday"
+                 2 = "A few times a week"
+                 3 = "Once a week"
+                 4 = "Less than once a week"
+                 5 = "Never"
+                98 = "{Not applicable}"
+   ;
+value DOTPAPER
+                 1 = "Everyday"
+                 2 = "A few times a week"
+                 3 = "Once a week"
+                 4 = "Less than once a week"
+                 5 = "Never"
+                98 = "{Not applicable}"
+   ;
+value DSPBOOK 
+                 1 = "Everyday"
+                 2 = "A few times a week"
+                 3 = "Once a week"
+                 4 = "Less than once a week"
+                 5 = "Never"
+                98 = "{Not applicable}"
+   ;
+value DOTBOOK 
+                 1 = "Everyday"
+                 2 = "A few times a week"
+                 3 = "Once a week"
+                 4 = "Less than once a week"
+                 5 = "Never"
+                98 = "{Not applicable}"
+   ;
+value DSPNOTES
+                 1 = "Everyday"
+                 2 = "A few times a week"
+                 3 = "Once a week"
+                 4 = "Less than once a week"
+                 5 = "Never"
+                98 = "{Not applicable}"
+   ;
+value DOTNOTES
+                 1 = "Everyday"
+                 2 = "A few times a week"
+                 3 = "Once a week"
+                 4 = "Less than once a week"
+                 5 = "Never"
+                98 = "{Not applicable}"
+   ;
+value DRDLBLEN
+                 1 = "Every time I buy a food I never bought before"
+                 2 = "Most of the time when I buy a food I never bought before"
+                 3 = "Sometimes when I buy a food I never bought before"
+                 4 = "Never"
+   ;
+value DRDTVGEN
+                 1 = "Every day"
+                 2 = "A few times a week"
+                 3 = "Once a week"
+                 4 = "Less than once a week"
+                 5 = "Never"
+   ;
+value DRDLETWK
+                 1 = "Every day"
+                 2 = "A few times a week"
+                 3 = "Once a week"
+                 4 = "Less than once a week"
+                 5 = "Never"
+                98 = "{Not applicable}"
+   ;
+value DRDREPWK
+                 1 = "Every day"
+                 2 = "A few times a week"
+                 3 = "Once a week"
+                 4 = "Less than once a week"
+                 5 = "Never"
+                98 = "{Not applicable}"
+   ;
+value DRDMANWK
+                 1 = "Every day"
+                 2 = "A few times a week"
+                 3 = "Once a week"
+                 4 = "Less than once a week"
+                 5 = "Never"
+                98 = "{Not applicable}"
+   ;
+value DRDDIRWK
+                 1 = "Every day"
+                 2 = "A few times a week"
+                 3 = "Once a week"
+                 4 = "Less than once a week"
+                 5 = "Never"
+                98 = "{Not applicable}"
+   ;
+value DRDDIAWK
+                 1 = "Every day"
+                 2 = "A few times a week"
+                 3 = "Once a week"
+                 4 = "Less than once a week"
+                 5 = "Never"
+                98 = "{Not applicable}"
+   ;
+value DRDBILWK
+                 1 = "Every day"
+                 2 = "A few times a week"
+                 3 = "Once a week"
+                 4 = "Less than once a week"
+                 5 = "Never"
+                98 = "{Not applicable}"
+   ;
+value DRDHEAWK
+                 1 = "Every day"
+                 2 = "A few times a week"
+                 3 = "Once a week"
+                 4 = "Less than once a week"
+                 5 = "Never"
+                98 = "{Not applicable}"
+   ;
+value DCOMEMAI
+                 1 = "Every day"
+                 2 = "A few times a week"
+                 3 = "Once a week"
+                 4 = "Less than once a week"
+                 5 = "Never"
+                98 = "{Not applicable}"
+   ;
+value DCOMEWDP
+                 1 = "Every day"
+                 2 = "A few times a week"
+                 3 = "Once a week"
+                 4 = "Less than once a week"
+                 5 = "Never"
+                98 = "{Not applicable}"
+   ;
+value DCOMESPR
+                 1 = "Every day"
+                 2 = "A few times a week"
+                 3 = "Once a week"
+                 4 = "Less than once a week"
+                 5 = "Never"
+                98 = "{Not applicable}"
+   ;
+value DCOMECDR
+                 1 = "Every day"
+                 2 = "A few times a week"
+                 3 = "Once a week"
+                 4 = "Less than once a week"
+                 5 = "Never"
+                98 = "{Not applicable}"
+   ;
+value DCOMEINT
+                 1 = "Every day"
+                 2 = "A few times a week"
+                 3 = "Once a week"
+                 4 = "Less than once a week"
+                 5 = "Never"
+                98 = "{Not applicable}"
+   ;
+value DCOMECHT
+                 1 = "Every day"
+                 2 = "A few times a week"
+                 3 = "Once a week"
+                 4 = "Less than once a week"
+                 5 = "Never"
+                98 = "{Not applicable}"
+   ;
+value DFILLFRM
+                 1 = "A lot"
+                 2 = "Some"
+                 3 = "A little"
+                 4 = "None"
+   ;
+value DRDPAPER
+                 1 = "A lot"
+                 2 = "Some"
+                 3 = "A little"
+                 4 = "None"
+   ;
+value DWRTNOTE
+                 1 = "A lot"
+                 2 = "Some"
+                 3 = "A little"
+                 4 = "None"
+   ;
+value DHDOMATH
+                 1 = "A lot"
+                 2 = "Some"
+                 3 = "A little"
+                 4 = "None"
+   ;
+value DJOBBETR
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DGETPROM
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DGETAJOB
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DIMPREAD
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DIMPWRIT
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DIMPMATH
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DIMPCOMP
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DIMPCOMM
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DEETNMAN
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DEEPAYTN
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DEEPAYTI
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DEEUNPAY
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DRDLIMJO
+                 1 = "A lot"
+                 2 = "Some"
+                 3 = "A little"
+                 4 = "Not at all"
+                98 = "{Not applicable}"
+   ;
+value DWRLIMJO
+                 1 = "A lot"
+                 2 = "Some"
+                 3 = "A little"
+                 4 = "Not at all"
+                98 = "{Not applicable}"
+   ;
+value DMALIMJO
+                 1 = "A lot"
+                 2 = "Some"
+                 3 = "A little"
+                 4 = "Not at all"
+                98 = "{Not applicable}"
+   ;
+value DCOLIMJO
+                 1 = "A lot"
+                 2 = "Some"
+                 3 = "A little"
+                 4 = "Not at all"
+                98 = "{Not applicable}"
+   ;
+value DMED    
+                 1 = "Less than/some high school"
+                 2 = "GED/high school equivalency"
+                 3 = "High school graduate"
+                 4 = "Vocational/trade/business school"
+                 5 = "Some college"
+                 6 = "Associate^s/2-year degree"
+                 7 = "College graduate"
+                 8 = "Graduate studies/degree"
+   ;
+value DMEDC   
+                 1 = "Less than/some high school"
+                 2 = "GED/high school equivalency"
+                 3 = "High school graduate"
+                 4 = "Vocational school/some college/A.A.degree"
+                 5 = "College+"
+   ;
+value DFED    
+                 1 = "Less than/some high school"
+                 2 = "GED/high school equivalency"
+                 3 = "High school graduate"
+                 4 = "Vocational/trade/business school"
+                 5 = "Some college"
+                 6 = "Associate^s/2-year degree"
+                 7 = "College graduate"
+                 8 = "Graduate studies/degree"
+   ;
+value DFEDC   
+                 1 = "Less than/some high school"
+                 2 = "GED/high school equivalency"
+                 3 = "High school graduate"
+                 4 = "Vocational school/some college/A.A.degree"
+                 5 = "College+"
+   ;
+value DPPARGRP
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DREDCHLD
+                 1 = "Every day"
+                 2 = "5 or 6 days"
+                 3 = "3 or 4 days"
+                 4 = "1 or 2 days"
+                 5 = "Never"
+                98 = "{Not applicable}"
+   ;
+value DTECLDAL
+                 1 = "Every day"
+                 2 = "A few times a week"
+                 3 = "Once a week"
+                 4 = "Less than once a week"
+                 5 = "Never"
+                 6 = "Child already knows the letters of the alphabet"
+                98 = "{Not applicable}"
+   ;
+value DTECLDWD
+                 1 = "Every day"
+                 2 = "A few times a week"
+                 3 = "Once a week"
+                 4 = "Less than once a week"
+                 5 = "Never"
+                 6 = "Child already reads well"
+                98 = "{Not applicable}"
+   ;
+value DSINGSNG
+                 1 = "Every day"
+                 2 = "A few times a week"
+                 3 = "Once a week"
+                 4 = "Less than once a week"
+                 5 = "Never"
+                98 = "{Not applicable}"
+   ;
+value DTLKSCHL
+                 1 = "Every day"
+                 2 = "A few times a week"
+                 3 = "Once a week"
+                 4 = "Less than once a week"
+                 5 = "Never"
+                98 = "{Not applicable}"
+   ;
+value DHLPSCHL
+                 1 = "Every day"
+                 2 = "A few times a week"
+                 3 = "Once a week"
+                 4 = "Less than once a week"
+                 5 = "Never"
+                98 = "{Not applicable}"
+   ;
+value DVOLSCHL
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DGOTOPTA
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DSPKTCHR
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DSNDFOOD
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value D25BOOKS
+                 1 = "True"
+                 2 = "False"
+   ;
+value DVARMAGS
+                 1 = "True"
+                 2 = "False"
+   ;
+value DNCOMSWP
+                 0 = "0"
+                 1 = "1"
+                 2 = "2"
+                 3 = "3"
+                 4 = "4"
+                 5 = "5"
+                 6 = "6"
+                 7 = "7"
+                 8 = "8"
+                 9 = "9"
+                10 = "10"
+   ;
+value DNCOMSIN
+                 0 = "0"
+                 1 = "1"
+                 2 = "2"
+                 3 = "3"
+                 4 = "4"
+                 5 = "5"
+                 6 = "6"
+                 7 = "7"
+                 8 = "8"
+                 9 = "9"
+                10 = "10"
+   ;
+value DMARITAL
+                 1 = "Never married"
+                 2 = "Married/living as married"
+                 3 = "Separated/divorced/widowed"
+   ;
+value DBQ2040A
+                 0 = "None"
+                 1 = "One"
+                 2 = "Two"
+                 3 = "Three or more"
+   ;
+value DBQ2045A
+                 1 = "Yes"
+                 2 = "No"
+   ;
+value DBQ2050A
+                 1 = "Self"
+                 2 = "Someone else"
+                 3 = "Both self and someone else"
+                98 = "{Not applicable}"
+   ;
+value DBQ2055A
+                 1 = "Yes"
+                 2 = "No"
+   ;
+value DBQ2060A
+                 1 = "Self"
+                 2 = "Someone else"
+                 3 = "Both self and someone else"
+                98 = "{Not applicable}"
+   ;
+value DBQ2065A
+                 1 = "Yes"
+                 2 = "No"
+   ;
+value DBQ2070A
+                 1 = "Self"
+                 2 = "Someone else"
+                 3 = "Both self and someone else"
+                98 = "{Not applicable}"
+   ;
+value DBQ2075A
+                 1 = "Yes"
+                 2 = "No"
+   ;
+value DBQ2080A
+                 1 = "Self"
+                 2 = "Someone else"
+                 3 = "Both self and someone else"
+                98 = "{Not applicable}"
+   ;
+value DBQ2085A
+                 1 = "Yes"
+                 2 = "No"
+   ;
+value DBQ2090A
+                 1 = "Self"
+                 2 = "Someone else"
+                 3 = "Both self and someone else"
+                98 = "{Not applicable}"
+   ;
+value DBQ2095A
+                 1 = "Yes"
+                 2 = "No"
+   ;
+value DBQ2100A
+                 1 = "Self"
+                 2 = "Someone else"
+                 3 = "Both self and someone else"
+                98 = "{Not applicable}"
+   ;
+value DBQ2105A
+                 1 = "Yes"
+                 2 = "No"
+   ;
+value DBQ2110A
+                 1 = "Self"
+                 2 = "Someone else"
+                 3 = "Both self and someone else"
+                98 = "{Not applicable}"
+   ;
+value DBQ2115A
+                 1 = "Yes"
+                 2 = "No"
+   ;
+value DBQ2120A
+                 1 = "Self"
+                 2 = "Someone else"
+                 3 = "Both self and someone else"
+                98 = "{Not applicable}"
+   ;
+value DBQ2125A
+                 1 = "Yes"
+                 2 = "No"
+   ;
+value DBQ2130A
+                 1 = "Self"
+                 2 = "Someone else"
+                 3 = "Both self and someone else"
+                98 = "{Not applicable}"
+   ;
+value DBQ2140A
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DWFTIME 
+                 1 = "None"
+                 2 = "Less than 2 years"
+                 3 = "2+ years"
+   ;
+value DBQ2160A
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DBQ2165A
+                 1 = "Yes"
+                 2 = "No"
+   ;
+value DBQ2170A
+                 1 = "Yes"
+                 2 = "No"
+   ;
+value DBQ2175A
+                 1 = "Yes"
+                 2 = "No"
+   ;
+value DBQ2180A
+                 1 = "Yes"
+                 2 = "No"
+   ;
+value DWLFLST 
+                 1 = "1 year or less"
+                 2 = "More than 1 year but less than 2 years"
+                 3 = "2 to 3 years"
+                 4 = "More than 3 years"
+                98 = "{Not applicable}"
+   ;
+value DWLFLSTC
+                 1 = "3 years or less"
+                 2 = "More than 3 years"
+                98 = "{Not applicable}"
+   ;
+value DBQ2195A
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DBQ2200A
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DBQ2205A
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DBQ2210A
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DBQ2215A
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DBQ2220A
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DBQ2225A
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DBQ2230A
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DBQ2240A
+                 1 = "Yes"
+                 2 = "No"
+   ;
+value DBQ2255A
+                 1 = "Excellent"
+                 2 = "Very good"
+                 3 = "Good"
+                 4 = "Fair"
+                 5 = "Poor"
+   ;
+value DBQ2260A
+                 1 = "Yes"
+                 2 = "No"
+   ;
+value DBQ2265A
+                 1 = "Yes"
+                 2 = "No"
+   ;
+value DBQ2270A
+                 1 = "Yes"
+                 2 = "No"
+   ;
+value DBQ2275A
+                 1 = "Yes"
+                 2 = "No"
+   ;
+value DBQ2280A
+                 1 = "Yes"
+                 2 = "No"
+   ;
+value DBQ2285A
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DBQ2290A
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DBQ2295A
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DBQ2300A
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DBQ2305A
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DBQ2310A
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DBQ2317A
+                 1 = "Yes"
+                 2 = "No"
+                 3 = "At least one child (but not all) has medical insurance"
+                98 = "{Not applicable}"
+   ;
+value DBQ2320A
+                 1 = "A lot"
+                 2 = "Some"
+                 3 = "A little"
+                 4 = "None"
+   ;
+value DBQ2325A
+                 1 = "A lot"
+                 2 = "Some"
+                 3 = "A little"
+                 4 = "None"
+   ;
+value DBQ2330A
+                 1 = "A lot"
+                 2 = "Some"
+                 3 = "A little"
+                 4 = "None"
+   ;
+value DBQ2335A
+                 1 = "A lot"
+                 2 = "Some"
+                 3 = "A little"
+                 4 = "None"
+   ;
+value DBQ2340A
+                 1 = "A lot"
+                 2 = "Some"
+                 3 = "A little"
+                 4 = "None"
+   ;
+value DBQ2345A
+                 1 = "A lot"
+                 2 = "Some"
+                 3 = "A little"
+                 4 = "None"
+   ;
+value DBQ2347A
+                 1 = "A lot"
+                 2 = "Some"
+                 3 = "A little"
+                 4 = "None"
+   ;
+value DBQ2350A
+                 1 = "Yes"
+                 2 = "No"
+   ;
+value DBQ2360A
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DBQ2370A
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DBQ2380A
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DBQ2385A
+                 1 = "Yes"
+                 2 = "No"
+   ;
+value DBQ2395A
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DBQ2405A
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DBQ2415A
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DBQ2420A
+                 1 = "Yes"
+                 2 = "No"
+   ;
+value DINCOME 
+                 1 = "Below poverty threshold"
+                 2 = "At or above poverty threshold"
+   ;
+value DBQ2421A
+                 1 = "< $5000"
+                 2 = "$5000-$9999"
+                 3 = "$10000-$14999"
+                 4 = "$15000-$19999"
+                 5 = "$20000-$29999"
+                 6 = "$30000-$39999"
+                 7 = "$40000-$59999"
+                 8 = "$60000+"
+   ;
+value DBQ2430A
+                 1 = "< $10000"
+                 2 = "$10000-$14999"
+                 3 = "$15000-$19999"
+                 4 = "$20000-$29999"
+                 5 = "$30000-$39999"
+                 6 = "$40000-$59999"
+                 7 = "$60000-$99999"
+                 8 = "$100000+"
+   ;
+value ICODE_C 
+                 1 = "(0170-0290) agriculture/forestry/fishing/hunting"
+                 2 = "(0370-0490) mining"
+                 3 = "(0570-0690) utilities"
+                 4 = "(0770) construction"
+                 5 = "(1070-2390) manufacturing-nondurable goods"
+                 6 = "(2470-3990) manufacturing-durable goods"
+                 7 = "(4070-4590) wholesale trade"
+                 8 = "(4670-5790) retail trade"
+                 9 = "(6070-6390) transportation and warehousing"
+                10 = "(6470-6780) information and communications"
+                11 = "(6870-7190) finance/insurance/and real estate"
+                12 = "(7270-7790) prof/scientific management/admin/waste mgmt"
+                13 = "(7860) elementary and secondary school"
+                14 = "(7870-7890) other educational"
+                15 = "(7970-8290) health care"
+                16 = "(8370-8470) social services"
+                17 = "(8560-8670) arts/entertainment/recreation/accommodations"
+                18 = "(8680-8690) restaurants and other food services"
+                19 = "(8770-9290) other services"
+                20 = "(9370-9590) public administration"
+                21 = "Have not worked in the past 3 years"
+   ;
+value OCODE_C 
+                 1 = "(0010-0430) executive/administration/managerial"
+                 2 = "(0500-0950) management related"
+                 3 = "(1000-1240) math and comp scientists"
+                 4 = "(1300-1530) engineers/architects/surveyors"
+                 5 = "(1540-1560) engineering and related technicians"
+                 6 = "(1600-1760) physical scientists"
+                 7 = "(1800-1860) social scientists and related"
+                 8 = "(1900-1960) life/physical/social science techs"
+                 9 = "(2000-2060) counselors/social/religious"
+                10 = "(2100-2150) lawyers/judges/legal support"
+                11 = "(2200-2340) teachers"
+                12 = "(2400-2550) education/training/library"
+                13 = "(2600-2760) entertainers and performers/sports and related"
+                14 = "(2800-2960) media and communication"
+                15 = "(3000-3260) health diagnosing and treating"
+                16 = "(3300-3650) health care tech and support"
+                17 = "(3700-3950) protective service"
+                18 = "(4000-4160) food prep and serving related"
+                19 = "(4200-4250) cleaning and building service"
+                20 = "(4300-4430) entertainment attendants and related"
+                21 = "(4460-4650) funeral related/personal care and service"
+                22 = "(4700-4960) sales and related"
+                23 = "(5000-5930) office and admin support"
+                24 = "(6000-6130) farming/fishing/forestry"
+                25 = "(6200-6940) construction trades and extraction"
+                26 = "(7000-7620) installation/maintenance/repair"
+                27 = "(7700-7750) production and operating"
+                28 = "(7800-7850) food preparation"
+                29 = "(7900-8960) setter/operators/tenders"
+                30 = "(9000-9750) transportation and material moving"
+                31 = "Have not worked in the past 3 years"
+   ;
+value SAALST  
+                 1 = "KY"
+                 2 = "MA"
+                 3 = "MD"
+                 4 = "MO"
+                 5 = "NY"
+                 6 = "OK"
+                 7 = "non-SAAL"
+   ;
+value IMPFLGUS
+                 0 = "Not imputed"
+                 1 = "Imputed"
+   ;
+value IMPFLGAG
+                 0 = "Not imputed"
+                 1 = "Imputed"
+   ;
+value IMPFLGCA
+                 0 = "Not imputed"
+                 1 = "Imputed"
+   ;
+value IMPFLG1A
+                 0 = "Not imputed"
+                 1 = "Imputed"
+   ;
+value IMPFLG2A
+                 0 = "Not imputed"
+                 1 = "Imputed"
+   ;
+value IMPFLG3A
+                 0 = "Not imputed"
+                 1 = "Imputed"
+   ;
+value IMPFLG4A
+                 0 = "Not imputed"
+                 1 = "Imputed"
+   ;
+value IMPFLG5A
+                 0 = "Not imputed"
+                 1 = "Imputed"
+   ;
+value IMPFLG6A
+                 0 = "Not imputed"
+                 1 = "Imputed"
+   ;
+value CC001A  
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value CC002A  
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value CC003A  
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value CC004A  
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value CC005A  
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value CC006A  
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value CC007A  
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 9 = "Not reached"
+   ;
+value N010101A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value N010201A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value N010301A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value N010401A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value N010501A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value N010601A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value N010701A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value N010801A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value N010901A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value N011001A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value N011101A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 9 = "Not reached"
+   ;
+value C020101A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C020201A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C020301A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C020401A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C020501A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C020601A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C020701A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C020801A
+                 0 = "Incorrect"
+                 1 = "Partially correct"
+                 2 = "Fully correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C020901A
+                 0 = "Incorrect"
+                 1 = "Partially correct"
+                 2 = "Fully correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C021001A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C021101A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 9 = "Not reached"
+   ;
+value C030101A
+                 0 = "Incorrect"
+                 1 = "Partially correct"
+                 2 = "Fully correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C030201A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C030301A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C030401A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C030501A
+                 0 = "Incorrect"
+                 1 = "Partially correct"
+                 2 = "Fully correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C030601A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C030701A
+                 0 = "Incorrect"
+                 1 = "Partially correct"
+                 2 = "Fully correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C030702A
+                 0 = "Incorrect"
+                 1 = "Partially correct"
+                 2 = "Fully correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C030703A
+                 0 = "Incorrect"
+                 1 = "Partially correct"
+                 2 = "Fully correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C030704A
+                 0 = "Incorrect"
+                 1 = "Partially correct"
+                 2 = "Fully correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C030705A
+                 0 = "Incorrect"
+                 1 = "Partially correct"
+                 2 = "Fully correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C030706A
+                 0 = "Incorrect"
+                 1 = "Partially correct"
+                 2 = "Fully correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C030707A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C030708A
+                 0 = "Incorrect"
+                 1 = "Partially correct"
+                 2 = "Fully correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C030709A
+                 0 = "Incorrect"
+                 1 = "Partially correct"
+                 2 = "Fully correct"
+                 9 = "Not reached"
+   ;
+value C040101A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C040201A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C040301A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C040401A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C040501A
+                 0 = "Incorrect"
+                 1 = "Partially correct"
+                 2 = "Fully correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C040502A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C040503A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C040504A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C040601A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C040701A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C040801A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 9 = "Not reached"
+   ;
+value C050101A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C050201A
+                 0 = "Incorrect"
+                 1 = "Partially correct"
+                 2 = "Fully correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C050301A
+                 0 = "Incorrect"
+                 1 = "Partially correct"
+                 2 = "Fully correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C050401A
+                 0 = "Incorrect"
+                 1 = "Partially correct"
+                 2 = "Fully correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C050501A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C050601A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C050701A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C050801A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C050901A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C051001A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C051101A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 9 = "Not reached"
+   ;
+value C060101A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C060201A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C060301A
+                 0 = "Incorrect"
+                 1 = "Partially correct"
+                 2 = "Fully correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C060501A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C060601A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C060701A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C060801A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C060901A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C061001A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C061101A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 9 = "Not reached"
+   ;
+value C070101A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C070201A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C070301A
+                 0 = "Incorrect"
+                 1 = "Partially correct"
+                 2 = "Fully correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C070401A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C070501A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C070601A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C070701A
+                 0 = "Incorrect"
+                 1 = "Partially correct"
+                 2 = "Fully correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C070801A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C070901A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C071001A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C071101A
+                 0 = "Incorrect"
+                 1 = "Partially correct"
+                 2 = "Fully correct"
+                 9 = "Not reached"
+   ;
+value C080101A
+                 0 = "Incorrect"
+                 1 = "Partially correct"
+                 2 = "Fully correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C080201A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C080301A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C080401A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C080501A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C080502A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C080503A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C080504A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C080601A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C080701A
+                 0 = "Incorrect"
+                 1 = "Partially correct"
+                 2 = "Fully correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value C080801A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 9 = "Not reached"
+   ;
+value N090101A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value N090201A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value N090301A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value N090401A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value N090501A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value N090601A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value N090701A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value N090801A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value N090901A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value N091001A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 9 = "Not reached"
+   ;
+value N100101A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value N100201A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value N100301A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value N100401A
+                 0 = "Incorrect"
+                 1 = "Partially correct"
+                 2 = "Fully correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value N100501A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value N100601A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value N100701A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value N100801A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value N100901A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value N101001A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 9 = "Not reached"
+   ;
+value N110101A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value N110201A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value N110301A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value N110302A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value N110303A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value N110401A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value N110501A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value N110601A
+                 0 = "Incorrect"
+                 1 = "Partially correct"
+                 2 = "Fully correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value N110701A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value N110801A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value N110901A
+                 0 = "Incorrect"
+                 1 = "Partially correct"
+                 2 = "Fully correct"
+                 9 = "Not reached"
+   ;
+value N120101A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value N120201A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value N120301A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value N120401A
+                 0 = "Incorrect"
+                 1 = "Partially correct"
+                 2 = "Fully correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value N120501A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value N120601A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value N120701A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value N120801A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value N120901A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value N121001A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value N121101A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 9 = "Not reached"
+   ;
+value N130101A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value N130102A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value N130103A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value N130104A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value N130201A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value N130301A
+                 0 = "Incorrect"
+                 1 = "Partially correct"
+                 2 = "Fully correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value N130401A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value N130501A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value N130601A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value N130701A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value N130801A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 8 = "Omitted"
+                 9 = "Not reached"
+   ;
+value CN13090A
+                 0 = "Incorrect"
+                 1 = "Correct"
+                 9 = "Not reached"
+   ;
+value DPGED   
+                 1 = "GED/HS diploma prior to prison"
+                 2 = "GED/HS diploma in prison"
+                 3 = "No GED/HS diploma- currently in academic/basic skills class"
+                 4 = "No GED/HS diploma- not currently enrolled"
+   ;
+value DPBQ120A
+                 1 = "Yes"
+                 2 = "No"
+   ;
+value DPBQ121A
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DPBLOCAT
+                 1 = "During current admission"
+                 2 = "During prior admission"
+                 3 = "Outside prison"
+                 4 = "Did not take basic skills class"
+   ;
+value DPITCERT
+                 1 = "Yes"
+                 2 = "No"
+                 3 = "No certification"
+   ;
+value DPOTCERT
+                 1 = "Yes"
+                 2 = "No"
+                 3 = "No certification"
+   ;
+value DPBQ139A
+                 1 = "Yes"
+                 2 = "No"
+   ;
+value DPBQ131A
+                 1 = "Yes"
+                 2 = "No"
+   ;
+value DPBQ140A
+                 1 = "Yes"
+                 2 = "No"
+   ;
+value DPBQ141A
+                 1 = "Yes"
+                 2 = "No"
+   ;
+value DPBQ142A
+                 1 = "Yes"
+                 2 = "No"
+   ;
+value DPBQ143A
+                 1 = "Yes"
+                 2 = "No"
+   ;
+value DPBQ144A
+                 1 = "Yes"
+                 2 = "No"
+   ;
+value DPBQ145A
+                 1 = "Yes"
+                 2 = "No"
+   ;
+value DPBQ146A
+                 1 = "Yes"
+                 2 = "No"
+   ;
+value DPBQ147A
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DPVOC   
+                 0 = "No participation"
+                 1 = "Less than 1 year"
+                 2 = "1 year or more"
+   ;
+value DPWAITVC
+                 1 = "Currently enrolled in classes"
+                 2 = "On a waiting list"
+                 3 = "Not on waiting list"
+   ;
+value DPCLSHR 
+                 0 = "0 hours"
+                 1 = "1 - 19 hours"
+                 2 = "20 - 49 hours"
+                 3 = "More than 50 hours"
+   ;
+value DOFFENSA
+                 1 = "Violent"
+                 2 = "Property"
+                 3 = "Drug"
+                 4 = "Public order"
+                 5 = "other"
+   ;
+value DOFFEN1A
+                 1 = "Violent"
+                 2 = "Property"
+                 3 = "Drug"
+                 4 = "Public order"
+                 5 = "other"
+                98 = "{Not applicable}"
+   ;
+value DOFFEN2A
+                 1 = "Violent"
+                 2 = "Property"
+                 3 = "Drug"
+                 4 = "Public order"
+                98 = "{Not applicable}"
+   ;
+value DOFFENSE
+                 1 = "Violent"
+                 2 = "Property"
+                 3 = "Drug"
+                 4 = "Public order"
+                 5 = "other"
+   ;
+value DBQ1490Y
+              1971 = "{1971}"
+              1974 = "{1974}"
+              1976 = "{1976}"
+              1978 = "{1978}"
+              1979 = "{1979}"
+              1980 = "{1980}"
+              1981 = "{1981}"
+              1982 = "{1982}"
+              1983 = "{1983}"
+              1984 = "{1984}"
+              1985 = "{1985}"
+              1986 = "{1986}"
+              1987 = "{1987}"
+              1988 = "{1988}"
+              1989 = "{1989}"
+              1990 = "{1990}"
+              1991 = "{1991}"
+              1992 = "{1992}"
+              1993 = "{1993}"
+              1994 = "{1994}"
+              1995 = "{1995}"
+              1996 = "{1996}"
+              1997 = "{1997}"
+              1998 = "{1998}"
+              1999 = "{1999}"
+              2000 = "{2000}"
+              2001 = "{2001}"
+              2002 = "{2002}"
+              2003 = "{2003}"
+              2004 = "{2004}"
+   ;
+value DPBQ149A
+                 1 = "Yes"
+                 2 = "No"
+   ;
+value DPBQ150A
+                 1 = "Yes"
+                 2 = "No"
+   ;
+value DCRIMHIS
+                 1 = "none"
+                 2 = "Probation only"
+                 3 = "Previous incarceration only"
+                 4 = "Probation and previous incarceration"
+   ;
+value DPBQ151A
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DBQ1510Y
+                98 = "{Not applicable}"
+              2004 = "{2004}"
+              2005 = "{2005}"
+              2006 = "{2006}"
+              2007 = "{2007}"
+              2008 = "{2008}"
+              2009 = "{2009}"
+              2010 = "{2010}"
+              2011 = "{2011}"
+              2012 = "{2012}"
+              2013 = "{2013}"
+              2014 = "{2014}"
+              2015 = "{2015}"
+              2016 = "{2016}"
+              2017 = "{2017}"
+              2018 = "{2018}"
+              2019 = "{2019}"
+              2020 = "{2020}"
+              2022 = "{2022}"
+              2023 = "{2023}"
+              2024 = "{2024}"
+              2025 = "{2025}"
+              2026 = "{2026}"
+              2027 = "{2027}"
+              2028 = "{2028}"
+              2029 = "{2029}"
+              2030 = "{2030}"
+              2031 = "{2031}"
+              2032 = "{2032}"
+              2033 = "{2033}"
+              2034 = "{2034}"
+              2035 = "{2035}"
+              2036 = "{2036}"
+              2039 = "{2039}"
+              2041 = "{2041}"
+              2050 = "{2050}"
+   ;
+value DPBQ152A
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DBQ1520Y
+                98 = "{Not applicable}"
+              2004 = "{2004}"
+              2005 = "{2005}"
+              2006 = "{2006}"
+              2007 = "{2007}"
+              2008 = "{2008}"
+              2009 = "{2009}"
+              2010 = "{2010}"
+              2011 = "{2011}"
+              2012 = "{2012}"
+              2013 = "{2013}"
+              2014 = "{2014}"
+              2015 = "{2015}"
+              2016 = "{2016}"
+              2017 = "{2017}"
+              2018 = "{2018}"
+              2019 = "{2019}"
+              2020 = "{2020}"
+              2021 = "{2021}"
+              2022 = "{2022}"
+              2024 = "{2024}"
+              2027 = "{2027}"
+              2030 = "{2030}"
+              2036 = "{2036}"
+              2040 = "{2040}"
+              2063 = "{2063}"
+              2090 = "{2090}"
+   ;
+value DLENGTHC
+                 1 = "0-60 months"
+                 2 = "61-120 months"
+                 3 = "121+ months"
+   ;
+value DRELEASE
+                 1 = "Within 2 years"
+                 2 = "More than 2 years"
+   ;
+value DPBQ153A
+                 1 = "Yes"
+                 2 = "No"
+   ;
+value DPJOBRD 
+                 1 = "Everyday"
+                 2 = "A few times a week"
+                 3 = "Once a week"
+                 4 = "Less than one a week"
+                 5 = "Never"
+                 6 = "No current work assignment"
+   ;
+value DPJOBWRT
+                 1 = "Everyday"
+                 2 = "A few times a week"
+                 3 = "Once a week"
+                 4 = "Less than one a week"
+                 5 = "Never"
+                 6 = "No current work assignment"
+   ;
+value DPJOBHR 
+                 1 = "0"
+                 2 = "1-9"
+                 3 = "10-19"
+                 4 = "20-29"
+                 5 = "30+"
+                 6 = "No current work assignment"
+   ;
+value DPBQ154A
+                 1 = "Yes"
+                 2 = "No"
+   ;
+value DPBQ155A
+                 1 = "Yes"
+                 2 = "No"
+   ;
+value DPBQ156A
+                 1 = "Yes"
+                 2 = "No"
+   ;
+value DPBQ157A
+                 1 = "Yes"
+                 2 = "No"
+   ;
+value DPBQ158A
+                 1 = "Yes"
+                 2 = "No"
+   ;
+value DPBQ159A
+                 1 = "Yes"
+                 2 = "No"
+   ;
+value DPBQ110A
+                 1 = "Yes"
+                 2 = "No"
+   ;
+value DPBQ111A
+                 1 = "Yes"
+                 2 = "No"
+   ;
+value DPBQ161A
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DPBQ169A
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DPBQ162A
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+value DPLIBACS
+                 1 = "Less than 2 days"
+                 2 = "2 to 6 days"
+                 3 = "7 to 10 days"
+                 4 = "More than 10 days"
+                 5 = "Has not tried to access library in past month"
+   ;
+value DPBQ189A
+                 1 = "Yes"
+                 2 = "No"
+                98 = "{Not applicable}"
+   ;
+run;
