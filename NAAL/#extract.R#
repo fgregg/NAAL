@@ -1,0 +1,3 @@
+naal <- read.csv("naal.csv")
+
+naal_extract <- naal[, c("DAGE"m # Age (6, categories)
